@@ -39,6 +39,12 @@ class AdapterComics(var context: Context,  var listComics : ArrayList<Comic>): R
 
         holder.view.setOnClickListener{
             var intent = Intent(it.context, ComicActivity::class.java)
+            intent.putExtra("title", item.title)
+            intent.putExtra("thumb", urlImg)
+            intent.putExtra("image", item.images[0].path.replace("http", "https")+"."+item.images[0].extension)
+            intent.putExtra("description", item.description)
+            intent.putExtra("price", item.prices[0].price)
+            intent.putExtra("date", item.dates[0].date)
             it.context.startActivity(intent)
         }
     }

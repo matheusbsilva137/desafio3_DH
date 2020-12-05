@@ -37,15 +37,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="15dp">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="@string/welcome"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25dp" />
 
                 <include
                     android:id="@+id/inc_cadastro"
